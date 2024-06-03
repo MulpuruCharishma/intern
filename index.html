@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-black transition-colors duration-500">
+    <header class="p-5 bg-gray-800 text-white">
+        <nav class="container mx-auto flex justify-between">
+            <div class="logo">Logo</div>
+            <ul class="flex space-x-4">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="dark-mode-toggle" class="ml-4 p-2 bg-gray-600 rounded">Dark Mode</button>
+        </nav>
+    </header>
+    <section id="hero" class="p-20 bg-cover bg-center" style="background-image: url('hero-image.jpg');">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold text-white">Welcome to Our Product</h1>
+            <p class="text-xl text-gray-300">Discover the amazing features we offer.</p>
+            <a href="#features" class="mt-5 inline-block bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition">Learn More</a>
+        </div>
+    </section>
+    <section id="features" class="p-20">
+        <h2 class="text-3xl font-bold text-center mb-10">Features</h2>
+        <div class="container mx-auto flex flex-wrap justify-around">
+            <div class="feature-item p-5 bg-gray-100 rounded shadow-md m-2 transition transform hover:scale-105">
+                <h3 class="text-xl font-semibold mb-3">Feature 1</h3>
+                <p>Detail about feature 1.</p>
+            </div>
+            <div class="feature-item p-5 bg-gray-100 rounded shadow-md m-2 transition transform hover:scale-105">
+                <h3 class="text-xl font-semibold mb-3">Feature 2</h3>
+                <p>Detail about feature 2.</p>
+            </div>
+            <div class="feature-item p-5 bg-gray-100 rounded shadow-md m-2 transition transform hover:scale-105">
+                <h3 class="text-xl font-semibold mb-3">Feature 3</h3>
+                <p>Detail about feature 3.</p>
+            </div>
+        </div>
+    </section>
+    <section id="screenshots" class="p-20 bg-gray-50">
+        <h2 class="text-3xl font-bold text-center mb-10">Screenshots</h2>
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <img src="screenshot1.jpg" alt="Screenshot 1" class="w-full h-auto rounded shadow-md transition transform hover:scale-105">
+            <img src="screenshot2.jpg" alt="Screenshot 2" class="w-full h-auto rounded shadow-md transition transform hover:scale-105">
+            <img src="screenshot3.jpg" alt="Screenshot 3" class="w-full h-auto rounded shadow-md transition transform hover:scale-105">
+        </div>
+    </section>
+    <section id="testimonials" class="p-20">
+        <h2 class="text-3xl font-bold text-center mb-10">Testimonials</h2>
+        <div class="container mx-auto flex flex-wrap justify-around">
+            <div class="testimonial-item p-5 bg-gray-100 rounded shadow-md m-2">
+                <p>"Great product!" - User 1</p>
+            </div>
+            <div class="testimonial-item p-5 bg-gray-100 rounded shadow-md m-2">
+                <p>"Amazing features!" - User 2</p>
+            </div>
+            <div class="testimonial-item p-5 bg-gray-100 rounded shadow-md m-2">
+                <p>"Excellent support!" - User 3</p>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="p-20 bg-gray-50">
+        <h2 class="text-3xl font-bold text-center mb-10">Pricing</h2>
+        <div class="container mx-auto flex flex-wrap justify-around">
+            <div class="pricing-item p-5 bg-white rounded shadow-md m-2 text-center transition transform hover:scale-105">
+                <h3 class="text-xl font-semibold mb-3">Basic</h3>
+                <p>$10/month</p>
+            </div>
+            <div class="pricing-item p-5 bg-white rounded shadow-md m-2 text-center transition transform hover:scale-105">
+                <h3 class="text-xl font-semibold mb-3">Standard</h3>
+                <p>$20/month</p>
+            </div>
+            <div class="pricing-item p-5 bg-white rounded shadow-md m-2 text-center transition transform hover:scale-105">
+                <h3 class="text-xl font-semibold mb-3">Premium</h3>
+                <p>$30/month</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="p-20">
+        <h2 class="text-3xl font-bold text-center mb-10">Contact Us</h2>
+        <div class="container mx-auto">
+            <form class="max-w-lg mx-auto bg-white p-8 rounded shadow-md">
+                <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border rounded">
+                <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded">
+                <textarea placeholder="Your Message" class="w-full p-3 mb-4 border rounded"></textarea>
+                <button type="submit" class="w-full p-3 bg-green-500 text-white rounded hover:bg-green-600 transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer class="p-5 bg-gray-800 text-white text-center">
+        <p>&copy; 2024 Our Company. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
